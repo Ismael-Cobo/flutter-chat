@@ -40,7 +40,6 @@ class MessageFieldBox extends StatelessWidget {
       },
       onFieldSubmitted: (value) {
         if (value.isEmpty) return;
-        print("Submit $value");
         onChange(value);
         textController.clear();
         focusNode.requestFocus();
